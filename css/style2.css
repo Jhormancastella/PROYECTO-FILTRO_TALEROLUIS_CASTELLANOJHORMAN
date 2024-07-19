@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: #ffffff;
+}
+
+header {
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+img {
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    font-weight: 600;
+}
+
+.set{
+    padding: 10px;
+}
+.not{
+    padding: 10px;
+}
+.pf{
+    width: 70px;
+    padding: 10px;
+}
+.pf:hover{
+    background-color: rgb(255, 102, 0);
+    border-radius: 50%;
+}
+.perfil{
+    display: flex;
+    align-items: center;
+}
+
+/*.perfil:hover{
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 102, 0,0.5);
+}*/
+
+.c{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+.logo {
+    margin: 0 40px;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: rgb(255, 123, 0);
+}
+
+.panel {
+    align-items: center;
+    justify-content:center;
+    padding: 0px 100px;
+
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-bottom: 10px;
+}
+p{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td ,input{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.progress {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.red {
+    background-color: #f44336;
+}
+
+.yellow {
+    background-color: #ffeb3b;
+    color: #000;
+}
+
+.green {
+    background-color: #4caf50;
+}
+
+button {
+    background-color: rgb(255, 123, 0);
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    border-radius: 15px;
+    height: 2.8vw;
+    width: 200px;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 15px;
+    bottom: 100px;
+
+    left: 50%; /* Centra horizontalmente el elemento */
+    transform: translateX(-50%); /* Ajusta para centrar exactamente */
+
+    /*display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: #ff7f50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;*/
+}
+
+button:hover {
+    background-color: #ff6347; /*cambia el color al boton*/
+}
+
+/* Estilos para el menú hamburguesa */
+
+.menu-icon {
+    display: none; /* sirve para Oculta el ícono de hamburguesa en pantallas grandes */
+    cursor: pointer;
+}
+
+.menu-icon div {
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin: 6px 0;
+    transition: background-color 0.3s ease;
+}
+
+#menu-toggle {
+    display: none; /* Ocultamos el checkbox */
+}
+
+/* Mostrar el menú al hacer click en el ícono de hamburguesa */
+#menu-toggle:checked + .meca nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff; /* Cambiar el fondo del menú según tu diseño */
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#menu-toggle:checked + .meca nav .c {
+    display: block; /* Mostrar cada ítem del menú */
+    padding: 10px;
+    transition: padding 0.3s ease;
+}
+
+@media (max-width: 600px) {
+    .menu-icon {
+        display: block; /* Mostrar el ícono de hamburguesa en pantallas pequeñas */
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 2;
+    }
+
+    .c {
+        display: none; /* Ocultar los ítems del menú por defecto en pantallas pequeñas */
+    }
+
+    #menu-toggle:checked + .meca nav .c {
+        display: flex; /* Mostrar los ítems del menú cuando se activa el checkbox */
+    }
+}
+
+.table-responsive {
+    overflow-x: auto; /* Permitir desplazamiento horizontal en pantallas pequeñas */
+    margin-top: 20px;
+}
+
+table {
+    width: 100%; /* La tabla ocupa el 100% del ancho disponible */
+    border-collapse: collapse;
+    margin-bottom: 20px; /* Espacio entre la tabla y el siguiente elemento */
+}
+
+th, td {
+    padding: 10px; /* Espaciado interno de celdas */
+    text-align: left; /* Alineación del texto */
+    white-space: nowrap; /* Evitar que el texto se ajuste automáticamente */
+}
+
+/* Estilos adicionales para pantallas pequeñas */
+@media (max-width: 600px) {
+    th, td {
+        padding: 8px; /* Reducir el espaciado interno de celdas */
+        font-size: 12px; /* Reducir el tamaño de fuente */
+    }
+
+    table {
+        font-size: 12px; /* Reducir el tamaño de fuente de la tabla */
+    }
+
+    .table-responsive {
+        overflow-x: auto; /* Mantener desplazamiento horizontal */
+    }
+}
