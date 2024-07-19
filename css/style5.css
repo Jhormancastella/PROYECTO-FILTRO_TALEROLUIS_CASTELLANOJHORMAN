@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: #fff;
+    overflow: hidden;
+}
+
+header {
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 10px 0;
+}
+.fondo{
+    background: linear-gradient(90deg, rgb(2, 1, 17) 0%, rgb(0, 0, 0) 35%, rgb(0, 0, 0) 100%)
+}
+img {
+    align-items: center;
+    background: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    font-weight: 600;
+}
+.f {
+    width: 100%;
+    height: 100%;
+    background: fixed;
+    background: center;
+    overflow: hidden;
+}
+.set{
+    padding: 10px;
+}
+.not{
+    padding: 10px;
+}
+.pf{
+    width: 70px;
+    padding: 10px;
+}
+.pf:hover{
+    background-color: rgb(255, 102, 0);
+    border-radius: 50%;
+}
+.perfil{
+    display: flex;
+    align-items: center;
+}
+.c{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+}
+.logo {
+    margin: 0 40px;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: cornflowerblue;
+}
+/*contenedor de todo el reporte*/
+.reporte{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff3d;
+    width: 90%;
+    height: 80%;
+    top: 15%;
+    left: 4%;
+}
+/*imput del correo*/
+.correo{
+    background-color: rgb(255, 255, 255);
+    width: 700px;
+    border-radius: 39px;
+    padding: 5px;
+}
+/*imput para reporte*/
+.descripcion{
+    background-color: rgba(255, 255, 255, 0.39) ;
+    width: 800px;
+    height: 200px;
+    border-radius: 39px;
+    margin-left: 2%;
+    padding: 5px;
+}
+/*ingreso de correo */
+.atac{
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+/*texto ingrese correo*/
+.ca{
+    right: 200px;
+    margin: 10px;
+}
+/*contendor de descripcion*/
+.cata{
+    margin-bottom: 15%;
+}
+h2{
+    color: #fff;
+    margin-bottom: 1%;
+}
+
+/*boton enviar*/
+button {
+    background-color: rgb(253, 101, 0);
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    border-radius: 15px;
+    height: 2.8vw;
+    width: 200px;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 15px;
+    bottom: 0;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%); 
+ }
+button:hover {
+    background-color: #ff5e00;
+}
+/*.c:hover{
+    background-color: rgba(255, 102, 0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+}*/
+
+
+@media (max-width: 600px) {
+    th, td {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .c, .perfil, .logo {
+        margin: 10px 0;
+    }
+}
+/* Estilos para el menú hamburguesa */
+
+.menu-icon {
+    display: none; /* sirve para Oculta el ícono de hamburguesa en pantallas grandes */
+    cursor: pointer;
+}
+
+.menu-icon div {
+    width: 30px;
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+    margin: 6px 0;
+    transition: background-color 0.3s ease;
+}
+
+#menu-toggle {
+    display: none; /* Ocultamos el checkbox */
+}
+
+/* Mostrar el menú al hacer click en el ícono de hamburguesa */
+#menu-toggle:checked + .meca nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff; /* Cambiar el fondo del menú según tu diseño */
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#menu-toggle:checked + .meca nav .c {
+    display: block; /* Mostrar cada ítem del menú */
+    padding: 10px;
+    transition: padding 0.3s ease;
+}
+
+@media (max-width: 600px) {
+    .menu-icon {
+        display: block; /* Mostrar el ícono de hamburguesa en pantallas pequeñas */
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 2;
+    }
+
+    .c {
+        display: none; /* Ocultar los ítems del menú por defecto en pantallas pequeñas */
+    }
+
+    #menu-toggle:checked + .meca nav .c {
+        display: flex; /* Mostrar los ítems del menú cuando se activa el checkbox */
+    }
+}
+
+.table-responsive {
+    overflow-x: auto; /* Permitir desplazamiento horizontal en pantallas pequeñas */
+    margin-top: 20px;
+}
+
+table {
+    width: 100%; /* La tabla ocupa el 100% del ancho disponible */
+    border-collapse: collapse;
+    margin-bottom: 20px; /* Espacio entre la tabla y el siguiente elemento */
+}
+
+th, td {
+    padding: 10px; /* Espaciado interno de celdas */
+    text-align: left; /* Alineación del texto */
+    white-space: nowrap; /* Evitar que el texto se ajuste automáticamente */
+}
+
+/* Estilos adicionales para pantallas pequeñas */
+@media (max-width: 600px) {
+    th, td {
+        padding: 8px; /* Reducir el espaciado interno de celdas */
+        font-size: 12px; /* Reducir el tamaño de fuente */
+    }
+
+    table {
+        font-size: 12px; /* Reducir el tamaño de fuente de la tabla */
+    }
+
+    .table-responsive {
+        overflow-x: auto; /* Mantener desplazamiento horizontal */
+    }
+}
