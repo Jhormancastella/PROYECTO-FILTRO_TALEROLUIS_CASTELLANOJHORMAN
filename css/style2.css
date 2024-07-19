@@ -46,12 +46,6 @@ nav {
     align-items: center;
 }
 
-/*.perfil:hover{
-    display: flex;
-    align-items: center;
-    background-color: rgba(255, 102, 0,0.5);
-}*/
-
 .c{
     display: flex;
     align-items: center;
@@ -149,20 +143,6 @@ button {
     left: 50%; /* Centra horizontalmente el elemento */
     transform: translateX(-50%); /* Ajusta para centrar exactamente */
 
-    /*display: flex;
-    align-items: center;
-    justify-content:center;
-    background-color: #ff7f50;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-top: 20px;
-    border-radius: 5px;
-    cursor: pointer;*/
 }
 
 button:hover {

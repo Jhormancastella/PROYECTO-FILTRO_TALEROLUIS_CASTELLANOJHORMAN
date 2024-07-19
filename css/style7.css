@@ -89,7 +89,7 @@ button{
     font-family: Arial, Helvetica, sans-serif ;
     font-size: 15px;
     bottom: 0;
-    top: 55%;
+    top: 65%;
     left: 50%; /* Centra horizontalmente el elemento */
     transform: translateX(-50%); /* Ajusta para centrar exactamente */
 }
@@ -113,7 +113,7 @@ button{
     color: #fff;
     position: absolute;
     bottom: 0;
-    top: 40%;
+    top: 45%;
     left: 50%; /* Centra horizontalmente el elemento */
     transform: translateX(-50%); /* Ajusta para centrar exactamente */
 }
@@ -121,10 +121,12 @@ button{
     color: #fff;
     position: absolute;
     bottom: 0;
-    top: 45%;
+    top: 48%;
     left: 50%; /* Centra horizontalmente el elemento */
     transform: translateX(-50%); /* Ajusta para centrar exactamente */
 }
+
+
 @media (max-width: 600px) {
     header {
         flex-direction: column;
@@ -177,5 +179,24 @@ button{
     display: block; /* Mostrar cada ítem del menú */
     padding: 10px;
     transition: padding 0.3s ease;
+}
+
+
+@media (max-width: 600px) {
+    .menu-icon {
+        display: block; /* Mostrar el ícono de hamburguesa en pantallas pequeñas */
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 2;
+    }
+
+    .c {
+        display: none; /* Ocultar los ítems del menú por defecto en pantallas pequeñas */
+    }
+
+    #menu-toggle:checked + .meca nav .c {
+        display: flex; /* Mostrar los ítems del menú cuando se activa el checkbox */
+    }
 }
 
