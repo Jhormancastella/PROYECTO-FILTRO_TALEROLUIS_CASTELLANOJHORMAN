@@ -42,6 +42,7 @@ nav {
     padding: 10px;
 }
 .pf{
+    width: 70px;
     padding: 10px;
 }
 .pf:hover{
@@ -145,32 +146,45 @@ h1 {
 
 
 @media (max-width: 600px) {
-    th, td {
-        padding: 5px;
-        font-size: 12px;
-    }
-
-    h1 {
-        font-size: 18px;
-    }
-
-    button {
-        padding: 8px 16px;
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 600px) {
-    header {
+    .divc {
         flex-direction: column;
     }
-
-    nav {
+    .Ayuda{
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
+        width: 90%;
+        height: 80%;
+        top: 15%;
+        left: 4%;
+        color: #fff;
     }
-
-    .c, .perfil, .logo {
-        margin: 10px 0;
+    .preguntas {
+        display: block;
+        padding: 0px 50px 0px 0px;
+    }
+    .contac {
+        width: 10px;
+        padding:  0px 0px 10px;
+    }
+    .what {
+        background-color: green;
+        border-radius: 30px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+    .tel {
+        background-color: rgb(37, 123, 194);
+        border-radius: 30px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 /* Estilos para el menú hamburguesa */

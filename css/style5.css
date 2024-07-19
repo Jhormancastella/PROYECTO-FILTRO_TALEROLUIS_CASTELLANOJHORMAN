@@ -101,7 +101,6 @@ a:hover {
     width: 800px;
     height: 200px;
     border-radius: 39px;
-    margin-left: 2%;
     padding: 5px;
 }
 /*ingreso de correo */
@@ -131,7 +130,7 @@ button {
     position: absolute;
     text-align: center;
     border-radius: 15px;
-    height: 2.8vw;
+    height: 40px;
     width: 200px;
     font-family: Arial, Helvetica, sans-serif ;
     font-size: 15px;
@@ -153,34 +152,49 @@ button:hover {
 
 
 @media (max-width: 600px) {
-    th, td {
+    .reporte{
         padding: 5px;
         font-size: 12px;
     }
-
-    h1 {
-        font-size: 18px;
+    .atac{
+        padding: 5px;
+        font-size: 12px;
     }
-
+    .cata{
+        padding: 5px;
+        font-size: 12px;
+    }
+    .correo{
+        background-color: rgb(255, 255, 255);
+        width: 250px;
+        border-radius: 39px;
+        padding: 5px;
+    }
+    .descripcion{
+        background-color: rgba(255, 255, 255, 0.39) ;
+        width: 300px;
+        height: 100px;
+        border-radius: 39px;
+        padding: 5px;
+    }
     button {
-        padding: 8px 16px;
-        font-size: 14px;
-    }
+        background-color: rgb(253, 101, 0);
+        color: #fff;
+        position: absolute;
+        text-align: center;
+        border-radius: 15px;
+        height: 40px;
+        width: 200px;
+        font-family: Arial, Helvetica, sans-serif ;
+        font-size: 15px;
+        bottom: 0;
+        top: 80%;
+        left: 50%;
+        transform: translateX(-50%); 
+     }
 }
 
-@media (max-width: 600px) {
-    header {
-        flex-direction: column;
-    }
 
-    nav {
-        flex-direction: column;
-    }
-
-    .c, .perfil, .logo {
-        margin: 10px 0;
-    }
-}
 /* Estilos para el menú hamburguesa */
 
 .menu-icon {

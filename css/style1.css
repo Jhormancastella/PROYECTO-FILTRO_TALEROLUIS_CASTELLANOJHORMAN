@@ -39,7 +39,7 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #eeeded;/*segundo cambio*/
+    background-color: #ffffff;/*segundo cambio*/
     padding: 20px; /*segundo cambio*/
     border-radius: 5%;/*segundo cambio*/
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);/*segundo cambio*/
@@ -68,6 +68,10 @@ p {
     background: center;
     overflow: hidden;
 }
+.pf{
+    width: 100px;
+    padding: 10px;
+}
 #logo {
     width: 200px;
 }
@@ -89,5 +93,21 @@ p {
     100% {
         opacity: 1;
         visibility: visible;
+    }
+}
+@media (max-width: 600px) {
+    #login-container {
+        position: absolute;
+        width: 60%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;/*segundo cambio*/
+        padding: 20px; /*segundo cambio*/
+        border-radius: 5%;/*segundo cambio*/
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);/*segundo cambio*/
+        animation: fadeOut 1s 2s forwards;/*segundo cambio*/
     }
 }
