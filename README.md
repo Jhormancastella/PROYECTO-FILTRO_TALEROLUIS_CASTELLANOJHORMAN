@@ -17,3 +17,31 @@ styles.css: Contiene los estilos CSS para la página web.
 ( y para el funcionamiento de los index siguientes “Añadir”,”Eliminar”, “Reportar”, “Ayuda” y “Perfil (Log-In y Log-Out)”, ).
 
 README.md: Documentación del propósito y detalles del proyecto.
+
+## clonar repositorio
+```bash
+[git clone https://github.com/Jhormancastella/viaja-por-Colombia/blob/main/am.html](https://github.com/Jhormancastella/PROYECTO-FILTRO_TALEROLUIS_CASTELLANOJHORMAN.git)
+```
+
+## codigo en base a 
+- html
+- css
+- recursos/imagenes
+
+
+Hecho por (jhorman jesus castellanos morales y luis talero)
+
+> [!NOTE]
+>
+
+> [!TIP]
+> 
+
+> [!IMPORTANT]  
+> se encuentra terminado
+
+> [!WARNING]  
+> 
+
+> [!CAUTION]
+> 
